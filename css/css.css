@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative; 
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+.navbar .container-fluid .text-bold{
+    font-weight: bolder;
+    font-size: 40px;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.main-head{
+    height: 100vh;
+    background-image: url(../images/head-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-head .main-head-container-btn{
+    background-color:#4792D6;
+}
+.main-head .main-head-container-btn:hover{
+    background-color:white;
+    color:#4792D6;
+    transition: all 1s ease;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.about .about-icon{
+    font-size: 60px;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.counter-body{
+    background-color: #F1F7FC;
+}
+.counter-body .counter-icon{
+    position: relative;
+    z-index: 2;
+    margin-top: -50px;
+}
+.counter-body .counter-counting{
+    animation-name: counterup;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.service .service-head hr, .appoin .appoin-head hr{
+    width: 15%;
+    background-color: #0D6EFD;
+    border: 2px solid #0D6EFD;
+}
+.service .service-container p i{
+    color: white;
+    background-color: #0D6EFD;
+    box-shadow: -10px -10px 5px lightblue ;
+}
+.service .service-container .card:hover{
+    color: white;
+    background-color: #0D6EFD;
+    transition: all 0.5s ease-in;
+}
+.service .service-container .card:hover .service-icon{
+    color: #0D6EFD;
+    background-color: white;
+    transition: all 0.5s ease-in;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.appoin .appoin-head hr{
+    width: 15%;
+    background-color: #0D6EFD;
+    border: 2px solid #0D6EFD;
+}
+.appoin .appoin-body .appoin-body-btn{
+    width: 20%;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.trick{
+    width: 101%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 4;
+    padding: 0px;
+    margin: -8px;
+    border-radius:  0px;
+}
+.trick-under{
+    width: 226%;
+    height: 100%;
+    position: relative;
+    background-color: rgba(187, 181, 181, 0.418);
+    z-index: 2;
+    padding: 0px;
+    margin: 0px;
+    left: -8px;
+} 
+.department button{
+    border-radius:  0px;
+    margin-top: 24px;
+    padding-right: 113px;
+
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.doctor .doctor-head hr{
+    width: 15%;
+    background-color: #0D6EFD;
+    border: 2px solid #0D6EFD;
+}
+.doctor .doctor-container .doctor-container-card:hover{
+    transform:translateY(-20px);
+    transition: all 1s ease-in;
+}
+.doctor .doctor-container .doctor-container-card .doctor-container-hr{
+    width: 60px;
+}
+.doctor .doctor-container .doctor-container-card .doctor-social{
+    text-decoration: none;
+}
+.doctor .doctor-container .doctor-container-card .doctor-social li{
+    display: inline-block;
+}
+
+.doctor .doctor-container .doctor-container-card .doctor-social img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 15px 2px -8px;
+    filter: grayscale(100%);
+}
+.doctor .doctor-container .doctor-container-card .doctor-social img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.1);
+    transition: all 0.2s ease-in;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.question{
+    background-color: #F1F7FC;
+    height: 150vh;
+}
+.question .question-head hr{
+    width: 15%;
+    background-color: #0D6EFD;
+    border: 2px solid #0D6EFD;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+     /* Default styling for accordion items */
+    .accordion-item {
+      transition: background-color 13s ease; /* Smooth background change */
+    }
+
+    /* Change accordion button styles when collapsed */
+    .accordion-button.collapsed {
+      background-color: #ffffff;
+      color: black;
+    }
+
+    /* Optional: Button hover effect */
+    .accordion-button:hover {
+      background-color: #0056b3;
+      color: white;
+    }
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.quoto .quoto-left .quoto-left-head{
+    color: #2C4964;
+}
+.quoto .quoto-right .w-10{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.quoto .quoto-right .quoto-right-btn{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #0056b3;    
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.gallery .gallery-head hr{
+    width: 15%;
+    background-color: #0D6EFD;
+    border: 2px solid #0D6EFD;
+}
+.gallery .gallery-container{
+    overflow: hidden;
+}
+.gallery .gallery-container img{
+    filter: blur(1px);
+}
+.gallery .gallery-container img:hover{
+    transform: scale(1.1);
+    transition: all 1s ease;
+    filter: blur(0px);
+} 
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.contact .contact-head hr{
+    width: 15%;
+    background-color: #0D6EFD;
+    border: 2px solid #0D6EFD;
+}
+.contact-data .contact-data-left h4{
+    color: #2C4964;
+}
+.contact-data .form-floating>label{
+    left: 10px;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+footer{
+    background-color: #F1F7FC;
+}
+.bg-dark-blue{
+    color: #2C4964;
+}
+footer .footer-social{
+    text-decoration: none;
+}
+footer .footer-social li{
+    display: inline-block;
+}
+footer .footer-social img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 15px 2px -8px;
+    filter: grayscale(100%);
+}
+footer .footer-social img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.1);
+    transition: all 0.2s ease-in;
+}
+footer .footer-right .card{
+    background-color: transparent;
+}
+.fs-8{
+    font-size: 14px;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+}
+footer a:hover{
+    text-decoration: none;
+    color: #3e88ad;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+@media (max-width : 567px){
+    .fs-sm-4{
+        font-size: 30px;
+        margin-left: -40px;
+    }
+    .main-head{
+        margin-top: 80px;
+    }
+    .appoinment{
+        display: none;
+    }
+    .main-head{
+        height: 230vh;
+    }
+    .about .about-icon{
+        display: flex;          /* Makes the element a flex container */
+        flex-direction: column; /* Stacks children vertically */
+    }
+    .about .about-icon i{
+        font-size: 70px;
+    }
+    .about .about-icon .about-icon-block h4{
+        font-size: 40px;
+    }
+    .about .about-icon .about-icon-block p{
+        font-size: 20px;
+    }
+    .appoin .appoin-body .form-check-input {
+        margin-left: 10px;
+    }
+    .appoin .appoin-body .appoin-body-btn{
+        width: 80%;
+    }
+    .appoin .appoin-body .appoin-body-btn{
+        width: 80%;
+    }
+    .department .department-button{
+        margin-bottom: 30px;
+    }
+    .question{
+        height: 210vh;
+    }
+    footer .footer-right .card{
+        margin-top: 20px;
+    }
+}
